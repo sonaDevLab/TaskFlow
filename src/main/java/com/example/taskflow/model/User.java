@@ -16,7 +16,7 @@ public class User {
     private String name;
 
     @Column(unique = true)
-    @Email(message = "Email inválido")
+    @Email(message = "Email inválido", regexp = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9+_.-]+\\.[A-Za-z]{2,6}$")
     @NotBlank(message = "El email es obligatorio")
     private String email;
 
