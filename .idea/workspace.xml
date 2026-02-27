@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Task form created - create task for specified user with info.&#10;Added on App.jsx">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Security service with JWT created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/controller/AuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/sonaiv13/TaskFlow",
-    "accountId": "ac5bb55d-9c30-4ded-8b7d-891999c41edd"
+    "accountId": "dbc9715a-42e2-4cfe-9fd7-54221e492927"
   }
 }]]></component>
   <component name="McpProjectServerCommands">
@@ -98,7 +97,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>
@@ -179,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772195211763</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Security service with JWT created">
+      <option name="closed" value="true" />
+      <created>1772216149604</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772216149604</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +200,7 @@
     <MESSAGE value="UserForm created - create user form with credentials." />
     <MESSAGE value="App main updated with User form.&#10;Axios package installed." />
     <MESSAGE value="Task form created - create task for specified user with info.&#10;Added on App.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task form created - create task for specified user with info.&#10;Added on App.jsx" />
+    <MESSAGE value="Security service with JWT created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Security service with JWT created" />
   </component>
 </project>

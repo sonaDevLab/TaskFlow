@@ -17,13 +17,24 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    //Crear usuario
-    public User createUser(User user){
-        Optional<User> existing = userRepository.findByEmail(user.getEmail());
-        if(existing.isPresent()){
+    //Registrar usuario
+    public User register(User user){
+        if(userRepository.findByEmail(user.getEmail()).isPresent()){
             throw new RuntimeException("El email ya existe.");
         }
         return userRepository.save(user);
+    }
+
+    //Iniciar Sesión
+    public User login(String email, String password) {
+        User user = userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+
+        if(!user.getPassword().equals(password)){
+            throw new RuntimeException("Contraseña incorrecta");
+        }
+
+        return user;
     }
 
     //Obtener usuario por ID
