@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="userService created - create and get user by id methods.">
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/taskService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/userService.js" afterDir="false" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="taskService created - create and get tasks by user id methods.">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/UserForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -105,7 +105,7 @@
       <workItem from="1772028400092" duration="749000" />
       <workItem from="1772030270810" duration="1252000" />
       <workItem from="1772189765876" duration="15000" />
-      <workItem from="1772189795280" duration="3212000" />
+      <workItem from="1772189795280" duration="4208000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -139,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772192708633</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="taskService created - create and get tasks by user id methods.">
+      <option name="closed" value="true" />
+      <created>1772193055647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772193055647</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +157,7 @@
     <MESSAGE value="Frontend added to project. Backend and Frontend organized." />
     <MESSAGE value="Unversioned files" />
     <MESSAGE value="userService created - create and get user by id methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="userService created - create and get user by id methods." />
+    <MESSAGE value="taskService created - create and get tasks by user id methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="taskService created - create and get tasks by user id methods." />
   </component>
 </project>
