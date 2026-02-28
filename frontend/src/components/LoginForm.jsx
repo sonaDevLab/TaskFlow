@@ -1,29 +1,50 @@
 import { useState } from "react";
 import { login } from "../services/authService.js";
 
-export default function LoginForm({ onLogin }) {
-    const [credentials, setCredentials] = useState({
-        email: "",
-        password: ""
-    });
+function LoginForm({ onLogin }) {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const [error, setError] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const user = await login(credentials);
+            const user = await login(email, password);
             onLogin(user);
-        } catch {
-            setError("Login incorrecto");
+        } catch (error) {
+            setError("Credeneciales incorrectas");
         }
     };
 
     return (
         <form onSubmit={handleSubmit}>
-            <input name='email' onChange={e => setCredentials({...credentials, email: e.target.value})}/>
-            <input name='password' onChange={e => setCredentials({...credentials, password: e.target.value})}/>
-            <button>Login</button>
-            {error && <p>{error}</p>}
+            <h2>Iniciar sesión</h2>
+
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+
+            <div>
+                <input
+                    type='email'
+                    placeholder='Email'
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+            </div>
+
+            <div>
+                <input
+                    type='password'
+                    placeholder='Contraseña'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                />
+            </div>
+
+            <button type='submit'>Entrar</button>
         </form>
     );
 }
+
+export default LoginForm;
