@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="authService created - register and login with Auth">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/LoginForm.jsx" afterDir="false" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="LoginForm created - form for login with credentials">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/authService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,7 @@
       <workItem from="1772189765876" duration="15000" />
       <workItem from="1772189795280" duration="7326000" />
       <workItem from="1772197652353" duration="448000" />
-      <workItem from="1772287538635" duration="849000" />
+      <workItem from="1772287538635" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -194,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772288101346</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="LoginForm created - form for login with credentials">
+      <option name="closed" value="true" />
+      <created>1772288652335</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1772288652335</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +219,7 @@
     <MESSAGE value="Task form created - create task for specified user with info.&#10;Added on App.jsx" />
     <MESSAGE value="Security service with JWT created" />
     <MESSAGE value="authService created - register and login with Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="authService created - register and login with Auth" />
+    <MESSAGE value="LoginForm created - form for login with credentials" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoginForm created - form for login with credentials" />
   </component>
 </project>
