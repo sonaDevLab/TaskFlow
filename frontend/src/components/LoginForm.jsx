@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { login } from "../services/authService.js";
 
-function LoginForm({ onLogin }) {
+function LoginForm({ onLogin, onSwitch }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -43,6 +43,13 @@ function LoginForm({ onLogin }) {
             </div>
 
             <button type='submit'>Entrar</button>
+
+            <p>
+                ¿No tienes cuenta?{" "}
+                <button type='button' onClick={onSwitch}>
+                    Regístrate aquí
+                </button>
+            </p>
         </form>
     );
 }
