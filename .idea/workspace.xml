@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="App - Login set to use LoginForm">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/dto/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/RegisterForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +34,12 @@
     &quot;assignee&quot;: &quot;sonaiv13&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sonaiv13/TaskFlow",
-    "accountId": "dbc9715a-42e2-4cfe-9fd7-54221e492927"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sonaiv13/TaskFlow&quot;,
+    &quot;accountId&quot;: &quot;dbc9715a-42e2-4cfe-9fd7-54221e492927&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -84,10 +83,10 @@
 }</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1774900817575" />
-    <option name="spentUsd" value="0.00253905" />
+    <option name="spentUsd" value="0.00606705" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="3" />
+    <option name="suspendCountdown" value="2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -115,7 +114,7 @@
       <workItem from="1772189795280" duration="7326000" />
       <workItem from="1772197652353" duration="448000" />
       <workItem from="1772287538635" duration="4700000" />
-      <workItem from="1772541483516" duration="714000" />
+      <workItem from="1772541483516" duration="2002000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
