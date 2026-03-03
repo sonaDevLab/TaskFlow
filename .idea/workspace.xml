@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="App - Login set to use LoginForm" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="App - Login set to use LoginForm">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="64" />
+    <option name="cachedIndexableFilesCount" value="66" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -31,12 +33,12 @@
     &quot;assignee&quot;: &quot;sonaiv13&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/sonaiv13/TaskFlow",
-    "accountId": "ac5bb55d-9c30-4ded-8b7d-891999c41edd"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sonaiv13/TaskFlow&quot;,
+    &quot;accountId&quot;: &quot;ac5bb55d-9c30-4ded-8b7d-891999c41edd&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -79,11 +81,11 @@
   }
 }</component>
   <component name="RecapSpentCounter">
-    <option name="endsOfQuotaMs" value="1772308821826" />
-    <option name="spentUsd" value="0.0535083" />
+    <option name="endsOfQuotaMs" value="1774900817575" />
+    <option name="spentUsd" value="0.00253905" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="4" />
+    <option name="suspendCountdown" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -110,7 +112,8 @@
       <workItem from="1772189765876" duration="15000" />
       <workItem from="1772189795280" duration="7326000" />
       <workItem from="1772197652353" duration="448000" />
-      <workItem from="1772287538635" duration="4355000" />
+      <workItem from="1772287538635" duration="4700000" />
+      <workItem from="1772541483516" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -224,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772293867269</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="App - Login set to use LoginForm">
+      <option name="closed" value="true" />
+      <created>1772293894401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1772293894401</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
