@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="App - Login set to use LoginForm">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/dto/UserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/service/UserService.java" afterDir="false" />
     </list>
