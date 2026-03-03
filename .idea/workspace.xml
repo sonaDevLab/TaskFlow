@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="LoginForm updated to include onSwitch for switching to register form. &#10;App.jsx updated to include RegisterForm.">
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="register bug in auth service in frontend resolved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,7 @@
       <workItem from="1772189795280" duration="7326000" />
       <workItem from="1772197652353" duration="448000" />
       <workItem from="1772287538635" duration="4700000" />
-      <workItem from="1772541483516" duration="3752000" />
+      <workItem from="1772541483516" duration="4406000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -251,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772545799634</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="register bug in auth service in frontend resolved">
+      <option name="closed" value="true" />
+      <created>1772547636570</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1772547636570</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +282,7 @@
     <MESSAGE value="App - Login set to use LoginForm" />
     <MESSAGE value="RegisterForm created" />
     <MESSAGE value="LoginForm updated to include onSwitch for switching to register form. &#10;App.jsx updated to include RegisterForm." />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginForm updated to include onSwitch for switching to register form. &#10;App.jsx updated to include RegisterForm." />
+    <MESSAGE value="register bug in auth service in frontend resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="register bug in auth service in frontend resolved" />
   </component>
 </project>
