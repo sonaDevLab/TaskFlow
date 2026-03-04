@@ -12,7 +12,7 @@ export const createTask = async (userId, task) => {
     }
 };
 
-export const getTasksByUserId = async (userId) => {
+export const getTasks = async (userId) => {
     try {
         const response = await axios.get(`${API_URL}/${userId}`);
         return response.data;

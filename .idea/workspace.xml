@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="register bug in auth service in frontend resolved">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="TaskService.js modified to include update and delete methods">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/TaskList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/services/taskService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/taskService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +115,7 @@
       <workItem from="1772197652353" duration="448000" />
       <workItem from="1772287538635" duration="4700000" />
       <workItem from="1772541483516" duration="4899000" />
-      <workItem from="1772631957037" duration="998000" />
+      <workItem from="1772631957037" duration="2134000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -261,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772547636570</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="TaskService.js modified to include update and delete methods">
+      <option name="closed" value="true" />
+      <created>1772635664079</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1772635664079</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +292,7 @@
     <MESSAGE value="RegisterForm created" />
     <MESSAGE value="LoginForm updated to include onSwitch for switching to register form. &#10;App.jsx updated to include RegisterForm." />
     <MESSAGE value="register bug in auth service in frontend resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="register bug in auth service in frontend resolved" />
+    <MESSAGE value="TaskService.js modified to include update and delete methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="TaskService.js modified to include update and delete methods" />
   </component>
 </project>
