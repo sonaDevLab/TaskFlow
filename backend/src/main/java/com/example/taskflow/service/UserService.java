@@ -9,7 +9,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
 
 @Service
 public class UserService {
@@ -61,6 +60,7 @@ public class UserService {
     }
 
     //Obtener usuario por ID
+        //para frontend
     public UserResponse getUserById(Long id){
         User user = userRepository.findById(id)
                 .orElseThrow(() ->
@@ -72,5 +72,11 @@ public class UserService {
                 user.getName(),
                 user.getEmail()
         );
+    }
+
+        //para backend
+    public User getUserEntityById(Long id){
+        return userRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Usuario no encontrado."));
     }
 }

@@ -1,15 +1,15 @@
 package com.example.taskflow.controller;
 
-import com.example.taskflow.model.Task;
+import com.example.taskflow.dto.TaskResponse;
 import com.example.taskflow.service.TaskService;
-import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:5173")
+
 @RestController
 @RequestMapping("/tasks")
+@CrossOrigin(origins = "http://localhost:5173")
 public class TaskController {
 
     private final TaskService taskService;
@@ -19,27 +19,35 @@ public class TaskController {
     }
 
     //Crear tarea
-    @PostMapping
-    public Task createTask(@Valid @RequestBody Task task) {
-        return taskService.createTask(task);
+    @PostMapping("/{userId}")
+    public TaskResponse createTask(@PathVariable Long userId, @RequestBody TaskResponse request) {
+        return taskService.createTask(
+                userId,
+                request.getTitle(),
+                request.getDescription()
+        );
     }
 
     //Obtener tareas por usuario
-    @GetMapping("/user/{userId}")
-    public List<Task> getTasksByUser(@PathVariable Long userId) {
+    @GetMapping("/{userId}")
+    public List<TaskResponse> getTasksByUser(@PathVariable Long userId) {
         return taskService.getTasksByUserId(userId);
     }
 
     //Actualizar tarea
-    @PutMapping("/{id}")
-    public Task updateTask(@PathVariable Long id, @RequestBody Task task) {
-        task.setId(id);
-        return taskService.updateTask(task);
+    @PutMapping("/{userId}/{taskId}")
+    public TaskResponse updateTask(@PathVariable Long userId, @PathVariable Long taskId, @RequestBody TaskResponse request) {
+        return taskService.updateTask(
+                userId,
+                taskId,
+                request.getTitle(),
+                request.getDescription()
+        );
     }
 
     //Eliminar tarea
-    @DeleteMapping("/{id}")
-    public void deleteTask(@PathVariable Long id) {
-        taskService.deleteTask(id);
+    @DeleteMapping("/{userId}/{taskId}")
+    public void deleteTask(@PathVariable Long userId, @PathVariable Long taskId) {
+        taskService.deleteTask(userId, taskId);
     }
 }
