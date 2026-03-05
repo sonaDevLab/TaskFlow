@@ -14,16 +14,25 @@ export const register = async (name, email, password) => {
 export const login = async (email, password) => {
     const response = await axios.post(`${API_URL}/login`, {email, password});
 
-    //Guardamos usuario o token
-    localStorage.setItem("user", JSON.stringify(response.data));
+    const { token, user } = response.data;
 
-    return response.data;
+    //Guardamos token y usuario
+    localStorage.setItem("token", token);
+    localStorage.setItem("user", JSON.stringify(user));
+
+    return user;
 };
 
 export const logout = () => {
+    localStorage.removeItem("token");
     localStorage.removeItem("user");
 };
 
+export const getToken = () => {
+    return localStorage.getItem("token");
+}
+
 export const getCurrentUser = () => {
-    return JSON.parse(localStorage.getItem("user"));
+    const user = localStorage.getItem("user");
+    return user ? JSON.parse(user) : null;
 };

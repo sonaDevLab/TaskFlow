@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="App.jsx modified to show Tasks list when logged in. And saves user when registers or login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/taskflow.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/taskflow.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/authService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,7 @@
       <workItem from="1772287538635" duration="4700000" />
       <workItem from="1772541483516" duration="4899000" />
       <workItem from="1772631957037" duration="3434000" />
-      <workItem from="1772737267944" duration="308000" />
+      <workItem from="1772737267944" duration="2536000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
