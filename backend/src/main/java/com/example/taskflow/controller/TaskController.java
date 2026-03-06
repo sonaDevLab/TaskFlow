@@ -19,26 +19,24 @@ public class TaskController {
     }
 
     //Crear tarea
-    @PostMapping("/{userId}")
-    public TaskResponse createTask(@PathVariable Long userId, @RequestBody TaskResponse request) {
+    @PostMapping
+    public TaskResponse createTask(@RequestBody TaskResponse request) {
         return taskService.createTask(
-                userId,
                 request.getTitle(),
                 request.getDescription()
         );
     }
 
-    //Obtener tareas por usuario
-    @GetMapping("/{userId}")
-    public List<TaskResponse> getTasksByUser(@PathVariable Long userId) {
-        return taskService.getTasksByUserId(userId);
+    //Obtener tareas del usuario logeado
+    @GetMapping
+    public List<TaskResponse> getTasks() {
+        return taskService.getTasks();
     }
 
     //Actualizar tarea
-    @PutMapping("/{userId}/{taskId}")
-    public TaskResponse updateTask(@PathVariable Long userId, @PathVariable Long taskId, @RequestBody TaskResponse request) {
+    @PutMapping("/{taskId}")
+    public TaskResponse updateTask(@PathVariable Long taskId, @RequestBody TaskResponse request) {
         return taskService.updateTask(
-                userId,
                 taskId,
                 request.getTitle(),
                 request.getDescription()
@@ -46,8 +44,8 @@ public class TaskController {
     }
 
     //Eliminar tarea
-    @DeleteMapping("/{userId}/{taskId}")
-    public void deleteTask(@PathVariable Long userId, @PathVariable Long taskId) {
-        taskService.deleteTask(userId, taskId);
+    @DeleteMapping("/{taskId}")
+    public void deleteTask(@PathVariable Long taskId) {
+        taskService.deleteTask(taskId);
     }
 }
