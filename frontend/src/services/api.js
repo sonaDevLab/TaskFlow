@@ -1,5 +1,4 @@
 import axios from "axios";
-import { getToken } from "./authService.js";
 
 const api = axios.create({
    baseURL: "http://localhost:8080"
@@ -8,7 +7,7 @@ const api = axios.create({
 // Interceptor para agregar Authorization header automátiacmente
 api.interceptors.request.use(
     (config) => {
-        const token = getToken();
+        const token = localStorage.getItem("token");
         if(token) {
             config.headers.Authorization = `Bearer ${token}`;
         }

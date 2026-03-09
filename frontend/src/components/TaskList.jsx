@@ -9,7 +9,9 @@ function TaskList({ user }) {
 
     //Cargar tareas al iniciar
     useEffect(() => {
-       loadTasks();
+       if(localStorage.getItem("token")) {
+           loadTasks();
+       }
     }, []);
 
     const loadTasks = async () => {
@@ -17,7 +19,7 @@ function TaskList({ user }) {
             const data = await getTasks();
             setTasks(data);
         } catch (error) {
-            console.error(error);
+            console.error("Error cargando tareas:", error);
         }
     };
 

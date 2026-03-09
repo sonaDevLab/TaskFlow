@@ -1,18 +1,10 @@
-import axios from "axios";
+import api from "./api.js";
 
-const API_URL = "http://localhost:8080/tasks";
-
-const getAuthHeader = () => {
-    const token = localStorage.getItem("token"); // token guardado en login
-    if (!token) return {};
-    return {
-        headers: { Authorization: `Bearer ${token}` }
-    };
-};
+const API_URL = "/tasks";
 
 export const createTask = async (task) => {
     try {
-        const response = await axios.post(API_URL, task, getAuthHeader());
+        const response = await api.post(API_URL, task);
         return response.data;
     } catch (error) {
         if(error.response) throw error.response.data;
@@ -22,7 +14,7 @@ export const createTask = async (task) => {
 
 export const getTasks = async () => {
     try {
-        const response = await axios.get(API_URL, getAuthHeader());
+        const response = await api.get(API_URL);
         return response.data;
     } catch (error) {
         if(error.response) throw error.response.data;
@@ -32,7 +24,7 @@ export const getTasks = async () => {
 
 export const updateTask = async (taskId, task) => {
     try {
-        const response = await axios.put(`${API_URL}/${taskId}`, task, getAuthHeader());
+        const response = await api.put(`${API_URL}/${taskId}`, task);
         return response.data;
     } catch (error) {
         if(error.response) throw error.response.data;
@@ -42,7 +34,7 @@ export const updateTask = async (taskId, task) => {
 
 export const deleteTask = async (taskId) => {
     try {
-        await axios.delete(`${API_URL}/${taskId}`, getAuthHeader());
+        await api.delete(`${API_URL}/${taskId}`);
     }  catch (error) {
         if(error.response) throw error.response.data;
         throw error;
