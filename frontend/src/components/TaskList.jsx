@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTasks, createTask, updateTask, deleteTask } from "../services/taskService.js";
+import { getTasks, createTask, updateTask, deleteTask, toggleTask } from "../services/taskService.js";
 
 function TaskList({ user }) {
     const [tasks, setTasks] = useState([]);
@@ -58,6 +58,15 @@ function TaskList({ user }) {
         }
     };
 
+    const handleToggle = async (taskId) => {
+        try {
+            await toggleTask(taskId);
+            loadTasks();
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
     return (
         <div>
             <h2>Tareas de {user.name}</h2>
@@ -86,8 +95,20 @@ function TaskList({ user }) {
             <ul>
                 {tasks.map((task) => (
                     <li key={task.id}>
-                        <strong>{task.title}</strong> - {task.description}
-                        <button onClick={() => handleEdit(task)}>Editar</button>
+                        <strong
+                            style={{
+                                textDecoration: task.completed ? "line-through" : "none"
+                            }}
+                        >
+                            {task.title}
+                        </strong>
+                        - {task.description}
+
+                        <button onClick={() => handleToggle(task)}>
+                            {task.completed ? "Desmarcar" : "Completar"}
+                        </button>
+
+                        <button onClick={() => handleEdit(task.id)}>Editar</button>
                         <button onClick={() => handleDelete(task.id)}>Eliminar</button>
                     </li>
                 ))}

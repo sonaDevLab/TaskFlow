@@ -40,3 +40,13 @@ export const deleteTask = async (taskId) => {
         throw error;
     }
 };
+
+export const toggleTask = async (taskId) => {
+    try{
+        const response = await api.patch(`${API_URL}/${taskId}/completed`);
+        return response.data;
+    } catch (error) {
+        if(error.response) throw error.response.data;
+        throw error;
+    }
+};
