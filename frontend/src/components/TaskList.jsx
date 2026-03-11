@@ -97,18 +97,19 @@ function TaskList({ user }) {
                     <li key={task.id}>
                         <strong
                             style={{
-                                textDecoration: task.completed ? "line-through" : "none"
+                                textDecoration: task.completed ? "line-through" : "none",
+                                color: task.completed ? "gray" : "black"
                             }}
                         >
                             {task.title}
                         </strong>
-                        - {task.description}
+                         - {task.description}
 
-                        <button onClick={() => handleToggle(task)}>
+                        <button onClick={() => handleToggle(task.id)}>
                             {task.completed ? "Desmarcar" : "Completar"}
                         </button>
 
-                        <button onClick={() => handleEdit(task.id)}>Editar</button>
+                        <button onClick={() => handleEdit(task)}>Editar</button>
                         <button onClick={() => handleDelete(task.id)}>Eliminar</button>
                     </li>
                 ))}

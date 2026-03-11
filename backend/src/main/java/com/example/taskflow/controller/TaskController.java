@@ -50,7 +50,7 @@ public class TaskController {
     }
 
     //Completar tarea
-    @PatchMapping("{task}/complete")
+    @PatchMapping("{taskId}/complete")
     public TaskResponse toggleTask(@PathVariable Long taskId) {
         return taskService.completeTask(taskId);
     }

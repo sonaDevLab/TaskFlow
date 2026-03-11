@@ -43,7 +43,7 @@ export const deleteTask = async (taskId) => {
 
 export const toggleTask = async (taskId) => {
     try{
-        const response = await api.patch(`${API_URL}/${taskId}/completed`);
+        const response = await api.patch(`${API_URL}/${taskId}/complete`);
         return response.data;
     } catch (error) {
         if(error.response) throw error.response.data;

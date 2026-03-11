@@ -116,7 +116,8 @@ public class TaskService {
         if(!task.getUser().getId().equals(user.getId())){
             throw new RuntimeException("No puedes eliminar esta tarea");
         }
-        task.setCompleted(true);
+
+        task.setCompleted(!task.isCompleted());
 
         Task updatedTask = taskRepository.save(task);
 

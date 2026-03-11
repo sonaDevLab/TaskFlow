@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Bug fixed to show Tasks list properly.">
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Frontend modified to add task toggle functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/data/taskflow.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/data/taskflow.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/service/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/TaskList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/TaskList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/services/taskService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/taskService.js" afterDir="false" />
     </list>
@@ -125,7 +129,7 @@
       <workItem from="1772801776610" duration="5254000" />
       <workItem from="1772977554439" duration="843000" />
       <workItem from="1773063831904" duration="3767000" />
-      <workItem from="1773228525632" duration="1163000" />
+      <workItem from="1773228525632" duration="2276000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -343,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773067800404</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Frontend modified to add task toggle functionality">
+      <option name="closed" value="true" />
+      <created>1773232146236</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1773232146236</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +397,7 @@
     <MESSAGE value="Frontend modified to work without using userId." />
     <MESSAGE value="api.js created to send token with Axios interceptor." />
     <MESSAGE value="Bug fixed to show Tasks list properly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixed to show Tasks list properly." />
+    <MESSAGE value="Frontend modified to add task toggle functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frontend modified to add task toggle functionality" />
   </component>
 </project>
