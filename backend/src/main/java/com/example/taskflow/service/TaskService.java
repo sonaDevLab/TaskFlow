@@ -105,4 +105,26 @@ public class TaskService {
 
         taskRepository.delete(task);
     }
+
+    //Completar tarea
+    public TaskResponse completeTask(Long taskId) {
+        User user = getCurrentUser();
+
+        Task task = taskRepository.findById(taskId)
+                .orElseThrow(() -> new RuntimeException("Tarea no encontrada"));
+
+        if(!task.getUser().getId().equals(user.getId())){
+            throw new RuntimeException("No puedes eliminar esta tarea");
+        }
+        task.setCompleted(true);
+
+        Task updatedTask = taskRepository.save(task);
+
+        return new TaskResponse(
+                updatedTask.getId(),
+                updatedTask.getTitle(),
+                updatedTask.getDescription(),
+                updatedTask.isCompleted()
+        );
+    }
 }

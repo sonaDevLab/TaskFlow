@@ -48,4 +48,10 @@ public class TaskController {
     public void deleteTask(@PathVariable Long taskId) {
         taskService.deleteTask(taskId);
     }
+
+    //Completar tarea
+    @PatchMapping("{task}/complete")
+    public TaskResponse toggleTask(@PathVariable Long taskId) {
+        return taskService.completeTask(taskId);
+    }
 }
