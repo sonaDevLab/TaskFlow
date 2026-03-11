@@ -6,6 +6,7 @@ function TaskList({ user }) {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [editingId, setEditingId] = useState(null);
+    const [filter, setFilter] = useState("all");
 
     //Cargar tareas al iniciar
     useEffect(() => {
@@ -67,10 +68,23 @@ function TaskList({ user }) {
         }
     };
 
+    //Contador tareas pendientes
+    const pendingCount = tasks.filter(task => !task.completed).length;
+
+    //Filtro de tareas
+    const filteredTasks = tasks
+        .filter(task => {
+            if(filter === "pending") return !task.completed;
+            if(filter === "completed") return task.completed;
+            return true;
+        })
+        .sort((a, b) => a.completed - b.completed);
+
     return (
         <div>
             <h2>Tareas de {user.name}</h2>
 
+            {/* FORMULARIO */}
             <form onSubmit={handleSubmit}>
                 <input
                     type='text'
@@ -92,9 +106,28 @@ function TaskList({ user }) {
                 </button>
             </form>
 
+            {/* CONTADOR */}
+            <p>{pendingCount} tareas pendientes</p>
+
+            {/* FILTROS */}
+            <div style={{ marginBottom: '20px' }}>
+                <button onClick={() => setFilter("all")}>
+                    Todas
+                </button>
+
+                <button onClick={() => setFilter("pending")}>
+                    Pendientes
+                </button>
+
+                <button onClick={() => setFilter("completed")}>
+                    Completadas
+                </button>
+            </div>
+
+            {/* LISTA DE TAREAS */}
             <ul>
-                {tasks.map((task) => (
-                    <li key={task.id}>
+                {filteredTasks.map((task) => (
+                    <li key={task.id} style={{ opacity: task.completed ? 0.6 : 1 }}>
                         <strong
                             style={{
                                 textDecoration: task.completed ? "line-through" : "none",
@@ -103,7 +136,7 @@ function TaskList({ user }) {
                         >
                             {task.title}
                         </strong>
-                         - {task.description}
+                        {" - "} {task.description}
 
                         <button onClick={() => handleToggle(task.id)}>
                             {task.completed ? "Desmarcar" : "Completar"}
