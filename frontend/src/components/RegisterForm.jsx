@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { register } from "../services/authService.js";
 
-function RegisterForm({ onRegister, onSwitch}) {
+function RegisterForm({ onSwitch}) {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -11,7 +11,7 @@ function RegisterForm({ onRegister, onSwitch}) {
         e.preventDefault();
         try{
             await register(name, email, password);
-            onRegister(); // vuelve al login
+            onSwitch(); // vuelve al login
         } catch (error) {
             setError("Error al registrar usuario");
         }

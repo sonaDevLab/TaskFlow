@@ -1,7 +1,10 @@
-import { useState } from "react";
-import { login } from "../services/authService.js";
+import { useState, useContext } from "react";
+import { AuthContext } from "../context/AuthContext.jsx";
 
-function LoginForm({ onLogin, onSwitch }) {
+function LoginForm({ onSwitch }) {
+
+    const { login } = useContext(AuthContext);
+
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
@@ -9,8 +12,7 @@ function LoginForm({ onLogin, onSwitch }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const user = await login(email, password);
-            onLogin(user);
+            await login(email, password);
         } catch (error) {
             setError("Credeneciales incorrectas");
         }
