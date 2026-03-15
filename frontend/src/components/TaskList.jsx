@@ -240,13 +240,13 @@ function TaskList({ user }) {
                         style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
                     >
                         <div className='text-4xl mb-3'>
-                            {filter === 'completed' ? "🎉" : "📝"}
+                            {filter === 'pending' ? '🎉' : '📝'}
                         </div>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
-                            {filter === 'completed'
-                                ? 'Aún no has completado ninguna tarea'
-                                : filter === 'pending'
+                            {filter === 'pending'
                                 ? 'No tienes tareas pendientes. !genial!'
+                                : filter === 'completed'
+                                ? 'Aún no has completado ninguna tarea'
                                 : 'Crea tu primera tarea arriba'
                             }
                         </p>
