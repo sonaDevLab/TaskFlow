@@ -99,10 +99,10 @@ function TaskList({ user }) {
         .sort((a, b) => a.completed - b.completed);
 
     return (
-        <div className=''>
+        <div className='space-y-6'>
 
             {/* Stats */}
-            <div className=''>
+            <div className='grid grid-cols-3 gap-3 animate-fadeUp animate-delay-1'>
                 {[
                     { label: 'Total', value: tasks.length, color: 'var(--accent)'},
                     { label: 'Pendientes', value: pendingCount, color: '#f59e0b'},
@@ -110,13 +110,13 @@ function TaskList({ user }) {
                 ].map(({ label, value, color }) => (
                     <div
                         key={label}
-                        className=''
+                        className='rounded-xl px-4 py-4 text-center'
                         style={{ background: 'var(--bg-card)', border: '1px solid var(--border)'}}
                     >
-                        <div className='' style={{ color, fontFamily: 'Syne, sans-serif' }}>
+                        <div className='text-2xl font-bold' style={{ color, fontFamily: 'Syne, sans-serif' }}>
                             {value}
                         </div>
-                        <div className='' style={{ color: 'var(--text-muted)' }}>
+                        <div className='text-xs mt-1' style={{ color: 'var(--text-muted)' }}>
                             {label}
                         </div>
                     </div>
@@ -125,23 +125,23 @@ function TaskList({ user }) {
 
             {/* FORM */}
             <div
-                className=''
+                className='rounded-2xl p-6 animate-fadeUp animate-delay-2'
                 style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
             >
                 <h2
-                    className=''
+                    className='text-sm font-semibold uppercase tracking-widest mb-4'
                     style={{ color: 'var(--text-muted)' }}
                 >
                     {editingId ? '✏️ Editando tarea' : '➕ Nueva tarea'}
                 </h2>
-                <form onSubmit={handleSubmit} className=''>
+                <form onSubmit={handleSubmit} className='flex flex-col gap-3'>
                     <input
                         type='text'
                         placeholder='Título de la tarea...'
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         required
-                        className=''
+                        className='w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200'
                         style={{
                             background: 'var(--bg-primary)',
                             border: '1px solid var(--border)',
@@ -155,7 +155,7 @@ function TaskList({ user }) {
                         placeholder='Descripción'
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
-                        className=''
+                        className='w-full px-4 py-3 rounded-xl text-sm outline-none transition-all duration-200'
                         style={{
                             background: 'var(--bg-primary)',
                             border: '1px solid var(--border)',
@@ -165,11 +165,11 @@ function TaskList({ user }) {
                         onBlur={e => (e.target.style.borderColor = 'var(--border)')}
                     />
 
-                    <div className=''>
+                    <div className='flex gap-2 pt-1'>
                         <button
                             type='submit'
                             disabled={loading || !title}
-                            className=''
+                            className='flex-1 py-3 rounded-xl text-sm font-semibold transition-all duration-200'
                             style={{
                                 background: 'linear-gradient(135deg, var(--accent), #5b4dd4)',
                                 color: 'white',
@@ -192,7 +192,7 @@ function TaskList({ user }) {
                             <button
                                 type='button'
                                 disabled={handleCancelEdit}
-                                className=''
+                                className='px-5 py-3 rounded-xl text-sm font-medium transition-all duration-200'
                                 style={{
                                     background: 'var(--bg-primary)',
                                     color: 'var(--text-muted)',
@@ -211,14 +211,14 @@ function TaskList({ user }) {
 
             {/* FILTROS */}
             <div
-                className=''
+                className='flex gap-2 p-1 rounded-xl animate-fadeUp animate-delay-3'
                 style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
             >
                 {FILTERS.map(({ key, label }) => (
                     <button
                         key={key}
                         onClick={() => setFilter(key)}
-                        className=''
+                        className='flex-1 py-2 rounded-lg text-sm font-medium transition-all duration-200'
                         style={{
                             background: filter === key ? 'var(--accent)' : 'transparent',
                             color: filter === key ? 'white' : 'var(--text-muted)',
@@ -233,13 +233,13 @@ function TaskList({ user }) {
             </div>
 
             {/* LISTA DE TAREAS */}
-            <div className=''>
+            <div className='space-y-2 animate-fadeUp animate-delay-4'>
                 {filteredTasks.length === 0 ? (
                     <div
-                        className=''
+                        className='text-center py-16 rounded-2xl'
                         style={{ background: 'var(--bg-card)', border: '1px solid var(--border)' }}
                     >
-                        <div className=''>
+                        <div className='text-4xl mb-3'>
                             {filter === 'completed' ? "🎉" : "📝"}
                         </div>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
