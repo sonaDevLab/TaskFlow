@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getTasks, createTask, updateTask, deleteTask, toggleTask } from "../services/taskService.js";
-import TaskForm from "./TaskForm.jsx";
+import TaskCard from "./TaskCard.jsx";
 
 const FILTERS = [
     {key: 'all', label: 'Todas'},
@@ -132,7 +132,7 @@ function TaskList({ user }) {
                     className=''
                     style={{ color: 'var(--text-muted)' }}
                 >
-                    {editingId ? 'Editando tarea' : 'Nueva tarea'}
+                    {editingId ? '✏️ Editando tarea' : '➕ Nueva tarea'}
                 </h2>
                 <form onSubmit={handleSubmit} className=''>
                     <input
@@ -253,7 +253,14 @@ function TaskList({ user }) {
                     </div>
                 ) : (
                     filteredTasks.map((task, i) => (
-                        <TaskForm/>
+                        <TaskCard
+                            key={task.id}
+                            task={task}
+                            index={i}
+                            onToggle={handleToggle}
+                            onEdit={handleEdit}
+                            onDelete={handleDelete}
+                        />
                     ))
                 )}
             </div>
