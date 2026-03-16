@@ -1,20 +1,40 @@
-import {useContext, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import LoginForm from "./components/LoginForm.jsx";
 import RegisterForm from "./components/RegisterForm.jsx";
 import TaskList from "./components/TaskList.jsx";
 import {AuthContext} from "./context/AuthContext.jsx";
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
+import ThemeSwitch from "./components/ThemeSwitch.jsx";
 
 function App() {
 
     const { user, logout } = useContext(AuthContext);
-
     const [showRegister, setShowRegister] = useState(false);
 
-    // Si no hay usuario logueado
+    const [isDark, setIsDark] = useState(() => {
+        const saved = localStorage.getItem("theme");
+        if (saved) return saved === "dark";
+        return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    });
+
+    useEffect(() => {
+        if(isDark) {
+            document.documentElement.classList.remove("light");
+        } else {
+            document.documentElement.classList.add("light");
+        }
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    }, [isDark]);
+
+    const toggleTheme = () => setIsDark(prev => !prev);
+
+    // AUTH - Si no hay usuario logueado
     if(!user){
         return (
-            <div className='w-full min-h-screen flex items-center justify-center px-4'>
+            <div className='w-full min-h-screen flex felx-col items-center justify-center px-4'>
+                <div style={{ position: 'fixed', top: '20px', right: '20px', zIndex: 50}}>
+                    <ThemeSwitch isDark={isDark} onToggle={toggleTheme} />
+                </div>
                 {showRegister ? (
                    <RegisterForm onSwitch={() => setShowRegister(false)}/>
                 ) : (
@@ -62,6 +82,9 @@ function App() {
                                     {user.name}
                                 </span>
                             </span>
+
+                            <ThemeSwitch isDark={isDark} onToggle={toggleTheme} />
+
                             <button
                                 onClick={logout}
                                 className='px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200'

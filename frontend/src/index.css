@@ -8,16 +8,36 @@
   --accent: #7c6df0;
   --accent-light: #9d8ff5;
   --accent-glow: rgba(124, 109, 240, 0.25);
-  --success: #4ade80;
+  --success: #22c55e;
   --danger: #f87171;
   --text-primary: #f0f0f5;
   --text-muted: #7a7a9a;
   --border: rgba(255,255,255,0.07);
   --border-hover: rgba(124, 109, 240, 0.4);
+  --gradient-bg-1: rgba(124, 109, 240, 0.12);
+  --gradient-bg-2: rgba(78, 60, 200, 0.08);
+}
+
+:root.light {
+  --bg-primary: #f4f4fb;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0effe;
+  --accent: #6c5ce7;
+  --accent-light: #5b4dd4;
+  --accent-glow: rgba(108, 92, 231, 0.2);
+  --success: #16a34a;
+  --danger: #dc2626;
+  --text-primary: #1a1a2e;
+  --text-muted: #6b6b8a;
+  --border: rgba(0,0,0,0.08);
+  --border-hover: rgba(108, 92, 231, 0.35);
+  --gradient-bg-1: rgba(108, 92, 231, 0.07);
+  --gradient-bg-2: rgba(124, 109, 240, 0.05);
 }
 
 * {
   box-sizing: border-box;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
 
 body {
@@ -25,8 +45,8 @@ body {
   min-height: 100vh;
   background-color: var(--bg-primary);
   background-image:
-          radial-gradient(ellipse at 20% 10%, rgba(124, 109, 240, 0.12) 0%, transparent 50%),
-          radial-gradient(ellipse at 80% 80%, rgba(78, 60, 200, 0.08) 0%, transparent 50%);
+          radial-gradient(ellipse at 20% 10%, var(--gradient-bg-1) 0%, transparent 50%),
+          radial-gradient(ellipse at 80% 80%, var(--gradient-bg-2) 0%, transparent 50%);
   font-family: 'DM Sans', sans-serif;
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
