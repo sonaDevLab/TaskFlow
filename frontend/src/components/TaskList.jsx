@@ -18,8 +18,8 @@ function TaskList({ user }) {
 
     //Cargar tareas al iniciar
     useEffect(() => {
-       if(localStorage.getItem("token")) loadTasks();
-    }, []);
+       if(user && localStorage.getItem("token")) loadTasks();
+    }, [user]);
 
     const loadTasks = async () => {
         try {
