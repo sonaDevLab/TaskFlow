@@ -15,7 +15,7 @@ public class JwtService {
     private final Key SECRET_KEY = Keys.hmacShaKeyFor(
             "tu-clave-super-secreta-minimo-32-caracteres-para-HS256".getBytes(StandardCharsets.UTF_8)
     );
-    private static final long EXPIRATION_TIME = 1000 * 60 * 60 * 24;
+    private static final long EXPIRATION_TIME = 1000 * 60 * 60 * 24 * 7;
 
     //Generar token
     public String generateToken(String email){
