@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-   baseURL: "http://localhost:8080"
+   baseURL: "https://taskflow-production-2900.up.railway.app"
 });
 
 // Interceptor para agregar Authorization header automátiacmente

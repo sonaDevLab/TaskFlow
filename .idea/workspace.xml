@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Login and RegisterForm modified to use AuthContext.&#10;React-router-dom intall.">
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Theme switch added to project.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/data/taskflow.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/data/taskflow.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="87" />
+    <option name="cachedIndexableFilesCount" value="89" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -130,7 +132,14 @@
       <workItem from="1773228525632" duration="5759000" />
       <workItem from="1773338565735" duration="58000" />
       <workItem from="1773338640693" duration="3862000" />
-      <workItem from="1773493839843" duration="502000" />
+      <workItem from="1773493839843" duration="7885000" />
+      <workItem from="1773504567739" duration="2672000" />
+      <workItem from="1773572353438" duration="4824000" />
+      <workItem from="1773577247491" duration="172000" />
+      <workItem from="1773665385881" duration="7874000" />
+      <workItem from="1773691612250" duration="161000" />
+      <workItem from="1773692009232" duration="204000" />
+      <workItem from="1773747977989" duration="1954000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -388,7 +397,111 @@
       <option name="project" value="LOCAL" />
       <updated>1773341583842</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Tailwind CSS installation in project">
+      <option name="closed" value="true" />
+      <created>1773494642810</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1773494642810</updated>
+    </task>
+    <task id="LOCAL-00034" summary="App logged in page UI set.">
+      <option name="closed" value="true" />
+      <created>1773496748504</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1773496748504</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Login form UI styling.">
+      <option name="closed" value="true" />
+      <created>1773499034975</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1773499034975</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Register form UI styling.">
+      <option name="closed" value="true" />
+      <created>1773501774316</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1773501774316</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Updates on task list component and cancel edit functionality added.">
+      <option name="closed" value="true" />
+      <created>1773505155215</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1773505155215</updated>
+    </task>
+    <task id="LOCAL-00038" summary="TaskList form structure.">
+      <option name="closed" value="true" />
+      <created>1773507106251</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1773507106251</updated>
+    </task>
+    <task id="LOCAL-00039" summary="TaskCard created and added to TaskList.">
+      <option name="closed" value="true" />
+      <created>1773574182751</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1773574182751</updated>
+    </task>
+    <task id="LOCAL-00040" summary="TaskCard styling.">
+      <option name="closed" value="true" />
+      <created>1773574703718</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1773574703718</updated>
+    </task>
+    <task id="LOCAL-00041" summary="TaskList styling improvements and animations.">
+      <option name="closed" value="true" />
+      <created>1773575540773</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1773575540773</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Task editing and cancel editing functionality fixed.">
+      <option name="closed" value="true" />
+      <created>1773575925703</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1773575925703</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Empty task badge icons fixed.">
+      <option name="closed" value="true" />
+      <created>1773576595692</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1773576595692</updated>
+    </task>
+    <task id="LOCAL-00044" summary="TaskForm component deleted.">
+      <option name="closed" value="true" />
+      <created>1773576809917</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1773576809917</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Theme switch added to project.">
+      <option name="closed" value="true" />
+      <created>1773673009387</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1773673009387</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,19 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="UserForm created - create user form with credentials." />
-    <MESSAGE value="App main updated with User form.&#10;Axios package installed." />
-    <MESSAGE value="Task form created - create task for specified user with info.&#10;Added on App.jsx" />
-    <MESSAGE value="Security service with JWT created" />
-    <MESSAGE value="authService created - register and login with Auth" />
-    <MESSAGE value="LoginForm created - form for login with credentials" />
-    <MESSAGE value="authService update - login and logout keeping session." />
-    <MESSAGE value="LoginForm update - credentials setters and form structure update." />
-    <MESSAGE value="App - Login set to use LoginForm" />
-    <MESSAGE value="RegisterForm created" />
-    <MESSAGE value="LoginForm updated to include onSwitch for switching to register form. &#10;App.jsx updated to include RegisterForm." />
-    <MESSAGE value="register bug in auth service in frontend resolved" />
-    <MESSAGE value="TaskService.js modified to include update and delete methods" />
     <MESSAGE value="TaskList UI created to show all tasks and interact with them." />
     <MESSAGE value="App.jsx modified to show Tasks list when logged in. And saves user when registers or login" />
     <MESSAGE value="authService in backend modified to include tokens." />
@@ -431,6 +531,19 @@
     <MESSAGE value="Auth context created for a global management of the user" />
     <MESSAGE value="ProtectedRoute created to protect login and task list routes." />
     <MESSAGE value="Login and RegisterForm modified to use AuthContext.&#10;React-router-dom intall." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login and RegisterForm modified to use AuthContext.&#10;React-router-dom intall." />
+    <MESSAGE value="Tailwind CSS installation in project" />
+    <MESSAGE value="App logged in page UI set." />
+    <MESSAGE value="Login form UI styling." />
+    <MESSAGE value="Register form UI styling." />
+    <MESSAGE value="Updates on task list component and cancel edit functionality added." />
+    <MESSAGE value="TaskList form structure." />
+    <MESSAGE value="TaskCard created and added to TaskList." />
+    <MESSAGE value="TaskCard styling." />
+    <MESSAGE value="TaskList styling improvements and animations." />
+    <MESSAGE value="Task editing and cancel editing functionality fixed." />
+    <MESSAGE value="Empty task badge icons fixed." />
+    <MESSAGE value="TaskForm component deleted." />
+    <MESSAGE value="Theme switch added to project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Theme switch added to project." />
   </component>
 </project>
