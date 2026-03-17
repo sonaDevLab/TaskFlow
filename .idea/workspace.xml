@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Theme switch added to project.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/taskflow.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/data/taskflow.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/data/taskflow.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api.js" afterDir="false" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Update frontend to use Railway backend URL">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +136,7 @@
       <workItem from="1773665385881" duration="7874000" />
       <workItem from="1773691612250" duration="161000" />
       <workItem from="1773692009232" duration="204000" />
-      <workItem from="1773747977989" duration="1954000" />
+      <workItem from="1773747977989" duration="2439000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -501,7 +498,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773673009387</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Update frontend to use Railway backend URL">
+      <option name="closed" value="true" />
+      <created>1773754718289</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1773754718289</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TaskList UI created to show all tasks and interact with them." />
     <MESSAGE value="App.jsx modified to show Tasks list when logged in. And saves user when registers or login" />
     <MESSAGE value="authService in backend modified to include tokens." />
     <MESSAGE value="taskService modified to send token in requests." />
@@ -544,6 +548,7 @@
     <MESSAGE value="Empty task badge icons fixed." />
     <MESSAGE value="TaskForm component deleted." />
     <MESSAGE value="Theme switch added to project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Theme switch added to project." />
+    <MESSAGE value="Update frontend to use Railway backend URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update frontend to use Railway backend URL" />
   </component>
 </project>
