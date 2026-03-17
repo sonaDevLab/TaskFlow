@@ -45,12 +45,24 @@ public class UserService {
 
     //Iniciar Sesión
     public UserResponse login(String email, String password) {
+        System.out.println("🔵 Intentando login con email: " + email);
+
         User user = userRepository.findByEmail(email)
-                .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+                .orElseThrow(() -> {
+                    System.err.println("❌ Usuario no encontrado: " + email);
+                    return new RuntimeException("Usuario no encontrado");
+                });
+
+        System.out.println("✅ Usuario encontrado: " + user.getEmail());
+        System.out.println("📝 Contraseña ingresada: " + password);
+        System.out.println("🔒 Contraseña guardada (hash): " + user.getPassword());
 
         if(!passwordEncoder.matches(password, user.getPassword())){
+            System.err.println("❌ Contraseña incorrecta");
             throw new RuntimeException("Contraseña incorrecta");
         }
+
+        System.out.println("✅ Login exitoso");
 
         return new UserResponse(
                 user.getId(),
