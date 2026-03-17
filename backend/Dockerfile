@@ -1,10 +1,11 @@
-FROM maven:3.8.1-openjdk-21 AS build
+FROM maven:3.8.1-openjdk-21
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 RUN mvn clean package -DskipTests
 
 FROM openjdk:21-slim
-COPY --from=build /app/target/taskflow-app.jar app.jar
+WORKDIR /app
+COPY --from=0 /app/target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+CMD ["java", "-jar", "app.jar"]

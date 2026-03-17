@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: taskflow-api
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    port: 8080
