@@ -33,7 +33,8 @@ public class SecurityConfig {
                 CorsConfiguration config = new CorsConfiguration();
                 config.setAllowedOrigins(Arrays.asList(
                         "http://localhost:5173",
-                        "http://localhost:3000"
+                        "http://localhost:3000",
+                        "taskflow-production-2900.up.railway.app"
                 ));
                 config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
                 config.setAllowedHeaders(Arrays.asList("*"));
