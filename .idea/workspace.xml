@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Update frontend to use Railway backend URL" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Fix Railway backend URL">
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,7 +136,7 @@
       <workItem from="1773665385881" duration="7874000" />
       <workItem from="1773691612250" duration="161000" />
       <workItem from="1773692009232" duration="204000" />
-      <workItem from="1773747977989" duration="4061000" />
+      <workItem from="1773747977989" duration="4411000" />
     </task>
     <task id="LOCAL-00001" summary="Frontend added to project. Backend and Frontend organized.">
       <option name="closed" value="true" />
@@ -504,7 +506,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773754718289</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Fix Railway backend URL">
+      <option name="closed" value="true" />
+      <created>1773757492160</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1773757492160</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="App.jsx modified to show Tasks list when logged in. And saves user when registers or login" />
     <MESSAGE value="authService in backend modified to include tokens." />
     <MESSAGE value="taskService modified to send token in requests." />
     <MESSAGE value="Frontend modified to work without using userId." />
@@ -547,6 +556,7 @@
     <MESSAGE value="TaskForm component deleted." />
     <MESSAGE value="Theme switch added to project." />
     <MESSAGE value="Update frontend to use Railway backend URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update frontend to use Railway backend URL" />
+    <MESSAGE value="Fix Railway backend URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Railway backend URL" />
   </component>
 </project>
