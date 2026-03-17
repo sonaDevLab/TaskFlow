@@ -34,6 +34,7 @@ public class SecurityConfig {
                 config.setAllowedOrigins(Arrays.asList(
                         "http://localhost:5173",
                         "http://localhost:3000",
+                        "https://task-flow-nine-flax.vercel.app",
                         "https://taskflow-production-2900.up.railway.app"
                 ));
                 config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
