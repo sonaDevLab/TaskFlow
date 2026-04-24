@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Update Dockerfile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Add proper Dockerfile">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,14 +144,6 @@
       <workItem from="1774380386359" duration="1375000" />
       <workItem from="1774894812935" duration="277000" />
       <workItem from="1775046852253" duration="196000" />
-    </task>
-    <task id="LOCAL-00002" summary="Frontend added to project. Backend and Frontend organized.">
-      <option name="closed" value="true" />
-      <created>1772030966104</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1772030966104</updated>
     </task>
     <task id="LOCAL-00003" summary="Unversioned files">
       <option name="closed" value="true" />
@@ -536,7 +529,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777061666596</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Add proper Dockerfile">
+      <option name="closed" value="true" />
+      <created>1777062060728</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1777062060728</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="api.js created to send token with Axios interceptor." />
     <MESSAGE value="Bug fixed to show Tasks list properly." />
     <MESSAGE value="Frontend modified to add task toggle functionality" />
     <MESSAGE value="Filters added for tasks" />
@@ -579,6 +579,7 @@
     <MESSAGE value="DockerFile for Render deploy" />
     <MESSAGE value="Render deploy URl update in CORS" />
     <MESSAGE value="Update Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Dockerfile" />
+    <MESSAGE value="Add proper Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add proper Dockerfile" />
   </component>
 </project>
