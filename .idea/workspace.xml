@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Add Dockerfile for Java" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Fix Docker image versions" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,14 +164,6 @@
       <workItem from="1774380386359" duration="1375000" />
       <workItem from="1774894812935" duration="277000" />
       <workItem from="1775046852253" duration="196000" />
-    </task>
-    <task id="LOCAL-00005" summary="taskService created - create and get tasks by user id methods.">
-      <option name="closed" value="true" />
-      <created>1772193055647</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1772193055647</updated>
     </task>
     <task id="LOCAL-00006" summary="UserForm created - create user form with credentials.">
       <option name="closed" value="true" />
@@ -557,7 +549,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777062839335</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Fix Docker image versions">
+      <option name="closed" value="true" />
+      <created>1777063112031</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1777063112032</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Filters added for tasks" />
     <MESSAGE value="Auth context created for a global management of the user" />
     <MESSAGE value="ProtectedRoute created to protect login and task list routes." />
     <MESSAGE value="Login and RegisterForm modified to use AuthContext.&#10;React-router-dom intall." />
@@ -600,6 +599,7 @@
     <MESSAGE value="Add proper Dockerfile" />
     <MESSAGE value="delete Dockerfile" />
     <MESSAGE value="Add Dockerfile for Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Dockerfile for Java" />
+    <MESSAGE value="Fix Docker image versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Docker image versions" />
   </component>
 </project>
