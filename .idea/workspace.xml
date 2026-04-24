@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Fix Railway backend URL">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="DockerFile for Render deploy">
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/taskflow/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -522,7 +520,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773757492160</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="DockerFile for Render deploy">
+      <option name="closed" value="true" />
+      <created>1777061368633</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1777061368633</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="authService in backend modified to include tokens." />
     <MESSAGE value="taskService modified to send token in requests." />
     <MESSAGE value="Frontend modified to work without using userId." />
     <MESSAGE value="api.js created to send token with Axios interceptor." />
@@ -565,6 +570,7 @@
     <MESSAGE value="Theme switch added to project." />
     <MESSAGE value="Update frontend to use Railway backend URL" />
     <MESSAGE value="Fix Railway backend URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix Railway backend URL" />
+    <MESSAGE value="DockerFile for Render deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="DockerFile for Render deploy" />
   </component>
 </project>
