@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://taskflow-backend-4xqj.onrender.com";
+const API_URL = "https://taskflow-backend-4xqj.onrender.com/auth";
 
 export const register = async (name, email, password) => {
     const response = await axios.post(`${API_URL}/register`, {

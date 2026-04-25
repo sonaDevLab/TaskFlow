@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Fix environment variables" />
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Add render url in CORS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/authService.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="88" />
+    <option name="cachedIndexableFilesCount" value="92" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -32,12 +35,12 @@
     &quot;assignee&quot;: &quot;sonaiv13&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/sonaiv13/TaskFlow&quot;,
-    &quot;accountId&quot;: &quot;dbc9715a-42e2-4cfe-9fd7-54221e492927&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sonaiv13/TaskFlow",
+    "accountId": "ac5bb55d-9c30-4ded-8b7d-891999c41edd"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -124,7 +127,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
       </set>
     </attachedChunks>
   </component>
@@ -166,14 +169,6 @@
       <workItem from="1774380386359" duration="1375000" />
       <workItem from="1774894812935" duration="277000" />
       <workItem from="1775046852253" duration="196000" />
-    </task>
-    <task id="LOCAL-00010" summary="authService created - register and login with Auth">
-      <option name="closed" value="true" />
-      <created>1772288101346</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1772288101346</updated>
     </task>
     <task id="LOCAL-00011" summary="LoginForm created - form for login with credentials">
       <option name="closed" value="true" />
@@ -559,7 +554,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777120927008</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Add render url in CORS">
+      <option name="closed" value="true" />
+      <created>1777121374083</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1777121374083</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Login and RegisterForm modified to use AuthContext.&#10;React-router-dom intall." />
     <MESSAGE value="Tailwind CSS installation in project" />
     <MESSAGE value="App logged in page UI set." />
     <MESSAGE value="Login form UI styling." />
@@ -602,6 +604,7 @@
     <MESSAGE value="Fix Docker image versions" />
     <MESSAGE value="Fix db url" />
     <MESSAGE value="Fix environment variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix environment variables" />
+    <MESSAGE value="Add render url in CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add render url in CORS" />
   </component>
 </project>
