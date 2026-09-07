@@ -35,12 +35,14 @@ La aplicación sigue una arquitectura **cliente-servidor**, donde el frontend co
 ![Java](https://img.shields.io/badge/Java-red?style=for-the-badge&logo=java)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-green?style=for-the-badge&logo=springboot)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens)
+![JWT](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 
 - **Java**
 - **Spring Boot**
 - **Spring Security**
 - **JWT Authentication**
 - **REST API**
+- **Docker**
 
 ---
 
