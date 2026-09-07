@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Fix api url endpoints">
+    <list default="true" id="355f4b0d-0a14-46a2-96a9-711d041d016a" name="Changes" comment="Modified Lists in Cors Config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,30 +170,6 @@
       <workItem from="1774380386359" duration="1375000" />
       <workItem from="1774894812935" duration="277000" />
       <workItem from="1775046852253" duration="196000" />
-    </task>
-    <task id="LOCAL-00012" summary="authService update - login and logout keeping session.">
-      <option name="closed" value="true" />
-      <created>1772292429257</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1772292429257</updated>
-    </task>
-    <task id="LOCAL-00013" summary="LoginForm update - credentials setters and form structure update.">
-      <option name="closed" value="true" />
-      <created>1772293024129</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1772293024130</updated>
-    </task>
-    <task id="LOCAL-00014" summary="App - Login set to use LoginForm">
-      <option name="closed" value="true" />
-      <created>1772293867269</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1772293867269</updated>
     </task>
     <task id="LOCAL-00015" summary="App - Login set to use LoginForm">
       <option name="closed" value="true" />
@@ -566,7 +539,31 @@
       <option name="project" value="LOCAL" />
       <updated>1777122245092</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Fix properties for Render deploy">
+      <option name="closed" value="true" />
+      <created>1788772856086</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1788772856086</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Modified Lists in Cors Config">
+      <option name="closed" value="true" />
+      <created>1788779566207</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1788779566207</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Modified Lists in Cors Config">
+      <option name="closed" value="true" />
+      <created>1788779640373</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1788779640373</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,8 +581,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="App logged in page UI set." />
-    <MESSAGE value="Login form UI styling." />
     <MESSAGE value="Register form UI styling." />
     <MESSAGE value="Updates on task list component and cancel edit functionality added." />
     <MESSAGE value="TaskList form structure." />
@@ -609,6 +604,8 @@
     <MESSAGE value="Fix environment variables" />
     <MESSAGE value="Add render url in CORS" />
     <MESSAGE value="Fix api url endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix api url endpoints" />
+    <MESSAGE value="Fix properties for Render deploy" />
+    <MESSAGE value="Modified Lists in Cors Config" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Lists in Cors Config" />
   </component>
 </project>
